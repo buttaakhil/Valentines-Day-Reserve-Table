@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+body{
+    background-color: black;
+}
+
+h1,marquee{
+    font-family: 'Nosifer', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+marquee{
+    font-size: 20px;
+
+
+}
+
+img,h1{
+    margin: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 32px;
+    text-align: center;
+    
+}
+
+.outer{
+    height: 100vh;
+    background-size: cover;
+    padding: 20px;
+}
+
+.host_name,.email_id,.contact_no,.date,.time,.note{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+input[type="text"]::placeholder,input[type="email"]::placeholder,input[type="tel"]::placeholder,textarea[placeholder="Suggest-me-something-my-love"]{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+input[type="date"],input[type="time"]{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+input,textarea{
+    height: 40%;
+    font-size: 15px;
+    color: white;
+    background-color:rgba(255, 0, 0, 0.239);
+    border-radius: 10px;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.button{
+    height: 10%;
+    display: flex;
+    justify-content: space-around;align-items: center;
+    
+}
+
+button{
+    margin-top: 20px;
+    height: 70%;
+    width: 80%;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    color: grey;
+    transition-duration: 1s;
+    background-color:rgba(255, 0, 0, 0.717) ;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color:rgba(255, 0, 0, 0.239) ;
+    box-shadow: 0px 0px 5px white;
+}
+
+input:focus{
+    box-shadow: 0px 0px 8px white;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 8px white;
+}
+
+.text_1{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text_2{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.83);
+    font-weight: 500;
+}
+
+.form{
+    margin:40px auto;
+    height: 450px;
+    width: 280px;
+    background-image: url("rose.png");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    padding: 20px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.form_header{
+    width: 380px;
+    margin: 20px auto;
+    border-radius: 5px;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 8px white;
+}
+
+.form_header:hover{
+    transform: scale(1.1);
+    text-decoration:line-through;
+    border: 2px solid rgba(255, 0, 0, 0.239);
+    text-decoration-color: rgba(255, 0, 0, 0.798);   
+    box-shadow: 0px 0px 16px rgba(255, 0, 0, 0.239);
+}
+
+.form:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 16px rgba(255, 0, 0, 0.639);
+    background-image: url("ghost_holding_roses.png");
+    background-size: cover;
+}
+
+@media(max-width:470px){
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .form_header{
+        width: 300px;
+    }
+}
+
+@media(max-width:380px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .text_1,.text_2,marquee{
+        font-size: 15px;
+    }
+    .outer{
+        padding: 0px;
+    }
+}
