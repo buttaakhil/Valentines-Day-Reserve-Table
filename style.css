@@ -192,3 +192,11 @@ textarea:focus{
         padding: 0px;
     }
 }
+
+@media(max-width:610px){
+    .top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
