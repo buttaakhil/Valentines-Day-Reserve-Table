@@ -165,7 +165,9 @@ textarea:focus{
     background-image: url("ghost_holding_roses.png");
     background-size: cover;
 }
-
+img{
+    box-shadow: 0px 0px 8px white;
+}
 @media(max-width:470px){
     h1{
         font-size: 40px;
